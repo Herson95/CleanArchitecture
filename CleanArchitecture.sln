@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Enterprise Business Rules", "1. Enterprise Business Rules", "{71E7DC93-F994-46D5-8060-C5143B356CFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application Business Rules", "2. Application Business Rules", "{AF36ABDE-4EFC-43C1-8EE7-96AD9E5D43F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Interfaces Adapters", "3. Interfaces Adapters", "{41FDD168-51C4-420C-8328-199AA7793ED2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Framework And Drivers", "4. Framework And Drivers", "{7D82E864-942D-45B1-A7C5-0E7427CBB2B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{4024A6FA-0AB3-4A4F-A182-A0D6FB649037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Sale.BusinessObjects", "NorthWind.Sale.BusinessObjects\NorthWind.Sale.BusinessObjects.csproj", "{165900EF-13FA-458F-A27B-880AAFDB2220}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4024A6FA-0AB3-4A4F-A182-A0D6FB649037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4024A6FA-0AB3-4A4F-A182-A0D6FB649037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4024A6FA-0AB3-4A4F-A182-A0D6FB649037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4024A6FA-0AB3-4A4F-A182-A0D6FB649037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{165900EF-13FA-458F-A27B-880AAFDB2220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{165900EF-13FA-458F-A27B-880AAFDB2220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{165900EF-13FA-458F-A27B-880AAFDB2220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{165900EF-13FA-458F-A27B-880AAFDB2220}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11D4697A-0077-4F5F-9454-E938B186EBF7}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4024A6FA-0AB3-4A4F-A182-A0D6FB649037} = {71E7DC93-F994-46D5-8060-C5143B356CFF}
+		{165900EF-13FA-458F-A27B-880AAFDB2220} = {AF36ABDE-4EFC-43C1-8EE7-96AD9E5D43F0}
+	EndGlobalSection
+EndGlobal
