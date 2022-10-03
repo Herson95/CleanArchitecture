@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,5 +11,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enums\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NorthWind.Entities\NorthWind.Entities.csproj" />
   </ItemGroup>
 </Project>

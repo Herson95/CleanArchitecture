@@ -1,5 +1,4 @@
-﻿using System;
-namespace NorthWind.Sale.BusinessObjects.DTOs.CreateOrder
+﻿namespace NorthWind.Sale.BusinessObjects.DTOs.CreateOrder
 {
     public class CreateOrderDetailDTO
     {
