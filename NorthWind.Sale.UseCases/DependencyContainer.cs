@@ -1,6 +1,4 @@
-﻿
-
-namespace NorthWind.Sale.UseCases
+﻿namespace NorthWind.Sale.UseCases
 {
     public static class DependencyContainer
     {

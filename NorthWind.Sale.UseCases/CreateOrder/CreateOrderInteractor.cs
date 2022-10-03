@@ -1,6 +1,4 @@
-﻿using NorthWind.Sale.BusinessObjects.Aggregates;
-
-namespace NorthWind.Sale.UseCases.CreateOrder
+﻿namespace NorthWind.Sale.UseCases.CreateOrder
 {
     public class CreateOrderInteractor : ICreateOrderInputPort
     {
@@ -25,7 +23,7 @@ namespace NorthWind.Sale.UseCases.CreateOrder
                 ShipPostalCode = orderDTO.ShipPostalCode
             };
 
-            foreach (var item in orderDTO.OrderDetails)
+            foreach (CreateOrderDetailDTO item in orderDTO.OrderDetails)
             {
                 order.AddDetail(item.ProductId, item.UnitPrice, item.Quantity);
             }
