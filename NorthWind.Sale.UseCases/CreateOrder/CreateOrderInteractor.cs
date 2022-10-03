@@ -14,20 +14,7 @@
 
         public async ValueTask Handle(CreateOrderDTO orderDTO)
         {
-            OrderAggregate order = new()
-            {
-                CustomerId = orderDTO.CustomerId,
-                ShipAddress = orderDTO.ShipAddress,
-                ShipCity = orderDTO.ShipCity,
-                ShipCountry = orderDTO.ShipCountry,
-                ShipPostalCode = orderDTO.ShipPostalCode
-            };
-
-            foreach (CreateOrderDetailDTO item in orderDTO.OrderDetails)
-            {
-                order.AddDetail(item.ProductId, item.UnitPrice, item.Quantity);
-            }
-
+            OrderAggregate order = OrderAggregate.From(orderDTO);
             await repository.CreateOrder(order);
             await repository.SaveChanges();
             await outputPort.Handle(order.Id);

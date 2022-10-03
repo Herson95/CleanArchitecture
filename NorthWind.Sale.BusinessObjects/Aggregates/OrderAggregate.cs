@@ -27,6 +27,25 @@
 
         public void AddDetail(int productId, decimal unitPrice, short quantity) =>
             AddDetail(new OrderDetail(productId,unitPrice,quantity));
+
+        public static OrderAggregate From(CreateOrderDTO orderDTO)
+        {
+            OrderAggregate order = new()
+            {
+                CustomerId = orderDTO.CustomerId,
+                ShipAddress = orderDTO.ShipAddress,
+                ShipCity = orderDTO.ShipCity,
+                ShipCountry = orderDTO.ShipCountry,
+                ShipPostalCode = orderDTO.ShipPostalCode
+            };
+
+            foreach (CreateOrderDetailDTO item in orderDTO.OrderDetails)
+            {
+                order.AddDetail(item.ProductId, item.UnitPrice, item.Quantity);
+            }
+
+            return order;
+        }
     }
 }
 
