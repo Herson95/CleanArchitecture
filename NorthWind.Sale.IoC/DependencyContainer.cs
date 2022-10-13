@@ -2,7 +2,7 @@
 {
     public static class DependencyContainer
     {
-        public static IServiceCollection AddRepositories(this IServiceCollection services,
+        public static IServiceCollection AddNorthWindSaleServices(this IServiceCollection services,
             IConfiguration configuration,
             string connectionName)
         {

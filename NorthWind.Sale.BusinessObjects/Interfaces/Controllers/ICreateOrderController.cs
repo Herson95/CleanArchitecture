@@ -2,7 +2,7 @@
 {
     public interface ICreateOrderController
     {
-        ValueTask<int> Handle(CreateOrderDTO orderDTO);
+        ValueTask<int> CreateOrder(CreateOrderDTO orderDTO);
     }
 }
 

@@ -7,3 +7,4 @@ global using NorthWind.Sale.BusinessObjects.Interfaces.Repositories;
 global using NorthWind.Sale.Controllers;
 global using NorthWind.Sale.Presenters;
 global using NorthWind.Sale.UseCases;
+global using NorthWind.EFCore.Repositories;
