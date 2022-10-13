@@ -15,6 +15,7 @@
     <None Remove="Entities\" />
     <None Remove="Configurations\" />
     <None Remove="DataContexts\" />
+    <None Remove="Respositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
@@ -27,5 +28,6 @@
     <Folder Include="Entities\" />
     <Folder Include="Configurations\" />
     <Folder Include="DataContexts\" />
+    <Folder Include="Respositories\" />
   </ItemGroup>
 </Project>

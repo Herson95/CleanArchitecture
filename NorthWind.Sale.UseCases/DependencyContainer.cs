@@ -1,14 +1,14 @@
-﻿namespace NorthWind.Sale.UseCases
+﻿namespace NorthWind.Sale.UseCases;
+
+public static class DependencyContainer
 {
-    public static class DependencyContainer
+    public static IServiceCollection AddUsesCasesServices(this IServiceCollection services)
     {
-        public static IServiceCollection AddUsesCasesServices(this IServiceCollection services)
-        {
-            services.AddScoped<ICreateOrderInputPort, CreateOrderInteractor>();
+        services.AddScoped<ICreateOrderInputPort, CreateOrderInteractor>();
 
-            return services;
-        }
-
+        return services;
     }
+
 }
+
 
